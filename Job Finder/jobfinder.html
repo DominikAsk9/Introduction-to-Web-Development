@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="jobfinder.css">
+	<title>Job finder</title>
+	<script type="text/javascript" src="jobfinder.js"></script>
+</head>
+<body>
+
+<center><form>
+	<h1><img src="https://w7.pngwing.com/pngs/702/654/png-transparent-job-hunting-employment-website-online-job-search-text-resume-logo.png" width="400" height="200"></h1>
+	<h2>Find a job</h2>
+	First Name:<br>
+	<input id="FN" type="text" name="firstname" placeholder="John" onblur="checkfunction1();"/><span id="message1"></span><br>
+	Last Name:<br>
+	<input id="LN" type="text" name="lastname" placeholder="Smith" onblur="checkfunction2();"/><span id="message2"></span><br>
+	Email address:<br>
+	<input id="EA" type="text" name="emailaddress" placeholder="johnsmith@gmail.com" onblur="checkfunction3();"/><span id="message3"></span><br>
+	Telephone number:<br>
+	<input id="Nr" type="text" name="telephonenumber" placeholder="+3706387154" onblur="checkfunction4();"/><span id="message4"></span><br>
+	What you good at?<br>
+	<input id="specialization" type="text" name="specialization" placeholder="Software engineering" onblur="checkfunction5();"/><span id="message5"></span><br>
+	Degree :<br>
+	<input id="associate" type="checkbox" name="degree">Associate</input>
+	<input id="bachelors" type="checkbox" name="degree">Bachelor's</input><br>
+	<input id="masters" type="checkbox" name="degree">Master's</input>
+	<input id="phd" type="checkbox" name="degree">Ph.D.</input><br>
+	<input id="pursuingdegree" type="checkbox" name="degree">Pursuing Degree</input><br>
+	Job types:<br>
+	<input id="fulltime" type="checkbox" name="jobtypes">Full-time</input>
+	<input id="parttime" type="checkbox" name="jobtypes">Part-time</input><br>
+	<input id="temporary" type="checkbox" name="jobtypes">Temporary</input>
+	<input id="intern" type="checkbox" name="jobtypes">Intern</input><br>
+	Organizations:<br>
+	<input id="youtube" type="checkbox" name="organizations">Youtube</input>
+	<input id="google" type="checkbox" name="organizations">Google</input><br>
+	<input id="amazon" type="checkbox" name="organizations">Amazon</input>
+	<input id="apple" type="checkbox" name="organizations">Apple</input><br>
+	Comments:<br>
+	<textarea id="comments" name="comments"></textarea><br>
+	Would you like to subscribe to our newsletter?<br>
+	<input id="subscribed" type="radio" name="newsletter">Yes</input>
+	<input id="notsubscribed" type="radio" name="newsletter">No</input><br>
+	<button id="button" onclick="buttonfunction();">Apply</button>
+	
+</form>
+
+</body>
+</html>
